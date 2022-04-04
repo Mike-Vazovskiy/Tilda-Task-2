@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.min.css">
+    <title>Tilda Task 2</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header_wrapper">
+            <div class="menu_list">
+                <ul>
+                    <li class="menu_item">HOME</li>
+                    <li class="menu_item">STORE</li>
+                    <li class="menu_item">ABOUT</li>
+                    <li class="menu_item">CONTACTS</li>
+                </ul>
+            </div>
+            <div class="basket">
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                viewBox="0 0 100.353 100.353" style="enable-background:new 0 0 100.353 100.353;" xml:space="preserve" width="35px">
+                <path d="M94.224,18.366c-0.284-0.332-0.7-0.523-1.138-0.523H22.308l-2.886-9.672C19.231,7.535,18.647,7.1,17.984,7.1H6.915
+                    c-0.829,0-1.5,0.671-1.5,1.5s0.671,1.5,1.5,1.5h9.951l18.234,61.104c0.002,0.007,0.008,0.013,0.01,0.02l2.265,7.704
+                    c-1.43,1.421-2.316,3.388-2.316,5.557c0,4.33,3.521,7.853,7.848,7.853c4.188,0,7.609-3.308,7.82-7.451h19.659
+                    c-0.001,0.055-0.008,0.109-0.008,0.165c0,4.326,3.519,7.846,7.844,7.846s7.845-3.52,7.845-7.846s-3.52-7.846-7.845-7.846
+                    c-3.199,0-5.952,1.928-7.171,4.681H50.299c-0.384-1.095-1.003-2.102-1.848-2.947c-1.481-1.481-3.449-2.298-5.541-2.298
+                    c-0.001,0-0.002,0-0.002,0c-1.029,0-2.01,0.204-2.911,0.566l-1.45-4.933h46.673c0.741,0,1.371-0.541,1.482-1.273l7.867-51.433
+                    C94.635,19.137,94.509,18.698,94.224,18.366z M78.222,80.207c2.671,0,4.845,2.174,4.845,4.846s-2.174,4.846-4.845,4.846
+                    s-4.844-2.174-4.844-4.846S75.551,80.207,78.222,80.207z M42.908,79.643c0,0,0.001,0,0.001,0c1.291,0,2.505,0.504,3.419,1.419
+                    c0.915,0.915,1.418,2.132,1.418,3.425c0,2.676-2.171,4.853-4.84,4.853c-2.673,0-4.848-2.177-4.848-4.853
+                    C38.059,81.816,40.234,79.643,42.908,79.643z M83.931,69.276H37.664l-2.836-9.648c-0.036-0.122-0.09-0.233-0.152-0.338
+                    L23.203,20.843h68.136L83.931,69.276z"/>
+                </svg>
+                <figure class="basket_badge">0</figure>
+            </div>
+        </div>
+    </header>
+<main id="main">
+    <div class="wrapper">
+        <h1 id="title" class="product_name"></h1>
+        <div class="product">
+            <div class="left">
+                <div class="pic_container">
+                    <figure class="thumb1"></figure>
+                </div>
+                <div class="thumbs">
+                    <ul id="thumbs" class="thumbs_list">
+                        <li class="thumbnail1"></li>
+                        <li class="thumbnail2"></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="right">
+                <div class="price_block">
+                    <div class="active_price">Price: <span id="priceold"></span> <span id="price"></span></div>
+                </div>
+                <div class="quantity_text">Quantity: <span id="quantity"></span></div> 
+                <div>
+                    <p id="descr"></p>
+                </div>  
+                <div class="btn_group">
+                    <div class="buy_group">
+                        <button id="buy" class="btn buy">Buy</button>
+                        <button class="btn buy" data-direction="plus">Add to cart</button>
+                        <div class="add">
+                            <button class="counter_btn" data-direction="minus">-</button>
+                            <input type="text" value="0" class="counter_value">
+                            <button class="counter_btn" data-direction="plus">+</button>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+        </div>
+    </div>
+</main>
+<div class="card_sect">
+    <div class="card">
+        <figure class="mini_card_image"></figure>
+        <h1 id="title"></h1>
+        <div id="descr"></div>
+        <div class="price_block_card">
+            <div class="prices_card">
+                <div class="active_price">Price: <span id="priceold"></span> <span id="price"></span></div>
+            </div>
+            <button id="buy" class="btn buy card_btn">Buy</button>
+        </div>
+    </div>
+</div>
+<div id="modal" class="modal">
+    <span class="close">×</span>
+    <img class="modal-content" id="img01">
+    <div id="caption"></div>
+</div>  
+<script src="js/script.min.js"></script>
+</body>
+</html>
