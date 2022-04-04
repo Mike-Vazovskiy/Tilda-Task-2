@@ -242,7 +242,6 @@ setTimeout(() => {
   buyBtn.forEach(button => {
     button.addEventListener('click', function() {
       const mainBlock = document.getElementById('main')
-      console.log(document.getElementById('quantity').textContent)
       if(!mainBlock.contains(cartBlock)){   // Alerting about added items
         cartBlock.textContent = 'Items: '
         mainBlock.appendChild(cartBlock)
