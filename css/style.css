@@ -793,6 +793,7 @@ img {
     align-items: center;
     justify-content: center;
     border-bottom: 1px solid #ccc;
+    text-align: center;
 }
 
 .counter_value:focus-visible {
