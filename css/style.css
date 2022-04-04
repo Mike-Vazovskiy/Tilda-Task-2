@@ -239,7 +239,7 @@ body {
     }
 
     .thumb1 {
-        width: 500px;
+        width: 100%;
         margin: 0 auto;
         border: 2px solid #fff;
     }
