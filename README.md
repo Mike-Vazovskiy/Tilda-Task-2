@@ -2,7 +2,7 @@
 That's how I completed the test task for Tilda Publishing
 ----------------------
 I made one main product card. Also, I decided to make 
-a mini-card for the product catalog.
+a mini-card for the product catalog just to show how it might look like.
 
 Known bugs:
 
