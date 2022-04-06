@@ -447,7 +447,7 @@ body {
     }
 
     .right {
-        padding: 30px;
+        padding: 0;
     }
 
     .thumb1 {
@@ -709,6 +709,40 @@ img {
 }
 
 /* Description and other info styles */
+/* Rating styles */
+.rating {
+    display: inline-flex;
+    flex-direction: row-reverse;
+}
+
+.rating_item {
+    border: none;
+    padding: 0;
+    background: none;
+    color: #eee;
+    font-size: 40px;
+    height: fit-content;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.rating_item:hover, .rating_item:hover ~ .rating_item {
+    color: #ccc;
+}
+
+.rating[data-total-value="1"] .rating_item:nth-child(n+5),
+.rating[data-total-value="2"] .rating_item:nth-child(n+4),
+.rating[data-total-value="3"] .rating_item:nth-child(n+3),
+.rating[data-total-value="4"] .rating_item:nth-child(n+2),
+.rating[data-total-value="5"] .rating_item:nth-child(n+1) {
+    color: #ccc;
+}
+
+.active_rate {
+    color: #ccc;
+}
+
+
 .price_block{
     display: flex;
     justify-content: start;

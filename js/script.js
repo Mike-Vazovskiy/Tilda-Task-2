@@ -197,6 +197,35 @@ setTimeout(() => {
   }
 }, 1000);
 
+//Let`s make rating widget
+const ratingItemsList = document.querySelectorAll('.rating_item')
+const ratingItemsArray = Array.prototype.slice.call(ratingItemsList)
+if (!localStorage.getItem('rate')){
+
+  ratingItemsArray.forEach(item => 
+    item.addEventListener('click', () => {
+      const { itemValue } = item.dataset
+      item.parentNode.dataset.totalValue = itemValue
+
+      for (let i=0; i<ratingItemsArray.length; i++){
+        ratingItemsArray[i].setAttribute('disabled', 'true')
+      }
+      localStorage.setItem('rate', itemValue)
+    })
+  )
+} else {
+  const rating = localStorage.getItem('rate')
+  console.log(ratingItemsArray.reverse())
+  if (rating !== null) {
+    for (let i=0; i<ratingItemsArray.length; i++){
+      ratingItemsArray[i].setAttribute('disabled', 'true')
+    }
+    for (let i=0; i<rating; i++){
+      ratingItemsArray[i].classList.add('active_rate')
+    }
+  }
+}
+
 //Let's count quantity of items for cart adding 
 quantity('GET', requestUrl)
 setTimeout(() => {
