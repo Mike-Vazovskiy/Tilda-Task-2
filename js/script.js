@@ -215,7 +215,7 @@ if (!localStorage.getItem('rate')){
   )
 } else {
   const rating = localStorage.getItem('rate')
-  console.log(ratingItemsArray.reverse())
+  ratingItemsArray.reverse()
   if (rating !== null) {
     for (let i=0; i<ratingItemsArray.length; i++){
       ratingItemsArray[i].setAttribute('disabled', 'true')
